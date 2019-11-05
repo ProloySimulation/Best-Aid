@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Life Saver</string>
+    <string-array name="chembers">
+        <item>শনিবার</item>
+        <item>রবিবার</item>
+        <item>সোমবার</item>
+    </string-array>
+
+    <string-array name="choice_items">
+        <item> A+ </item>
+        <item> O+ </item>
+        <item> A </item>
+        <item> O- </item>
+        <item> AB+ </item>
+    </string-array>
+
+    <string-array name="Time">
+        <item>সকাল ১০ঃ০০ - দুপুর ১২ঃ০০</item>
+        <item>বিকাল ৫ঃ০০ - সন্ধ্যা ৭ঃ০০</item>
+    </string-array>
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

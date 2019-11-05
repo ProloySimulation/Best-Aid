@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityCatagory">
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:queryHint="ডাক্তারের নাম লিখুন">
+
+    </SearchView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+        android:layout_width="100sp"
+        android:layout_height="80sp"
+        android:background="#e0e0e0"
+        android:id="@+id/rlCat1"
+        app:corner_radius="18sp"
+        android:layout_margin="8sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="40sp"
+            android:src="@drawable/cat"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="কিডনী স্পেশালিস্ট"
+            android:gravity="center"/>
+
+        </LinearLayout>
+
+    </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+    <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+        android:layout_width="100sp"
+        android:layout_height="80sp"
+        android:background="#e0e0e0"
+        android:id="@+id/rlCat2"
+        app:corner_radius="18sp"
+        android:layout_margin="8sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="40sp"
+                android:src="@drawable/cat"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="কিডনী স্পেশালিস্ট"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+        <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+            android:layout_width="100sp"
+            android:layout_height="80sp"
+            android:background="#e0e0e0"
+            android:id="@+id/rlCat3"
+            app:corner_radius="18sp"
+            android:layout_margin="8sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="50sp"
+                    android:layout_height="40sp"
+                    android:src="@drawable/cat"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="কিডনী স্পেশালিস্ট"/>
+
+            </LinearLayout>
+
+        </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+        <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+            android:layout_width="100sp"
+            android:layout_height="80sp"
+            android:background="#e0e0e0"
+            android:id="@+id/rlCat4"
+            app:corner_radius="18sp"
+            android:layout_margin="8sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="50sp"
+                    android:layout_height="40sp"
+                    android:src="@drawable/cat"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="কিডনী স্পেশালিস্ট"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

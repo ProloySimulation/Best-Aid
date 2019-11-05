@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityDoctorProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+        android:layout_width="200sp"
+        android:layout_gravity="center"
+        android:layout_height="130sp"
+        android:background="#e0e0e0"
+        android:id="@+id/roundSide"
+        app:corner_radius="18sp"
+        android:layout_margin="8sp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imvDoctorProfile"
+            android:src="@drawable/doc"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="ডাঃ ঊবায়দুল কাদির উজ্জ্বল"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_alignBottom="@+id/imvDoctorProfile"
+            android:background="#88333639"
+            />
+    </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60sp"
+                android:layout_height="50sp"
+
+                android:src="@drawable/call"
+                android:background="@android:color/transparent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="20sp">
+
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/hospital" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ঢাকা মেডিকেল কলেজ ঢাকা"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="10sp">
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/location"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="১০০ রমনা  সেন্ট্রাল শহীদ মিনার এরিয়া  "
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="10sp">
+
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/outlook"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xtrmproloy875@gmail.com"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40sp"/>
+        </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="যে সকল রোগের চিকিৎসা হয়"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="10sp"/>
+
+        <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="#e0e0e0"
+            android:id="@+id/roundSideDesease"
+            app:corner_radius="18sp"
+            android:layout_margin="20sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15sp"
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@android:color/background_dark"
+                android:text="প্রসাব ধারণ ক্ষমতা"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_marginTop="7sp"
+                    android:text="পজন্মগত কিডনী ছোট / বড়"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_marginTop="7sp"
+                    android:text="অতিরিক্ত ফুলে যাওয়া"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_marginTop="7sp"
+                    android:text="প্রসাবে জালা-পোড়া"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_marginTop="7sp"
+                    android:text="কিডনী সমস্যা"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_marginTop="7sp"
+                    android:text="কিডনীর পাথর সহ অন্যান্য রোগ"/>
+
+            </LinearLayout>
+        </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/cardBtnSerial"
+            android:layout_marginBottom="31dp"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="অ্যাপয়েন্ট নিন"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</ScrollView>
