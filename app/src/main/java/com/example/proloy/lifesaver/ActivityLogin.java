@@ -5,24 +5,29 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class ActivityLogin extends AppCompatActivity {
 
-    CardView login ;
+    Button btnLogin ;
+    TextView tvSignUp ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        login = findViewById(R.id.cardButton1);
+        btnLogin=findViewById(R.id.btnLogin);
+        tvSignUp = findViewById(R.id.tvSignUp);
 
-        login.setOnClickListener(new View.OnClickListener() {
+        btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
             }
         });
+
     }
 }

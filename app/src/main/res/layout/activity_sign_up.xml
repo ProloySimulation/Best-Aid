@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#3e7064"
-    tools:context=".ActivityLogin">
+    tools:context=".ActivitySignUp">
 
     <ImageView
         android:id="@+id/imageView"
@@ -39,34 +39,57 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/etEmail"
+            android:id="@+id/etEmailSign"
+            android:layout_marginLeft="5sp"
+            android:gravity="center"
             android:background="@drawable/rounded_white"
-            android:hint="E-mail"/>
+            android:hint="ই-মেইল"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10sp"
+            android:layout_marginLeft="5sp"
+            android:gravity="center"
             android:background="@drawable/rounded_white"
-            android:hint="Password"
-            android:id="@+id/etPassword" />
+            android:hint="মোবাইল নাম্বার"
+            android:id="@+id/etMobile" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/rounded_white"
+            android:hint="পাসওয়ার্ড"
+            android:id="@+id/etPasswordSign" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="5sp"
+            android:gravity="center"
+            android:background="@drawable/rounded_white"
+            android:hint="ঠিকানা"
+            android:id="@+id/etLocation" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:id="@+id/btnLogin"
-            android:textSize="20sp"
-            android:text="Login"
+            android:id="@+id/btnSignUp"
+            android:background="@drawable/rounded_white"
+            android:textSize="15sp"
+            android:text="রেজিস্টার করুন "
             android:layout_marginTop="10sp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Don't you have an account ? "
+            android:text="আপনার কি একাউন্ট আছে ??? "
             android:layout_gravity="center"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tvSignUp"
-            android:text="Sign Up Now "
+            android:text=" একাউন্টে যান "
             android:layout_gravity="center"/>
 
 
