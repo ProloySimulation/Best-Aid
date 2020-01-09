@@ -13,11 +13,6 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name=".QuestionActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".ActivitySignUp" />
         <activity
@@ -41,7 +36,13 @@
             android:label="Best Aid" />
         <activity
             android:name=".ActivityBlood"
-            android:label="Best Aid" />
+            android:label="Best Aid">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ActivityReceipt"
             android:label="Best Aid" />

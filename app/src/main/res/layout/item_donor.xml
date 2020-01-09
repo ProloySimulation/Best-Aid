@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="আকিব আবদুল্লাহ"
+                        android:id="@+id/tvName"
+                        android:textColor="#fdb501"
+                        android:textSize="24dp" />
+
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="ও পজেটিভ"
+                                android:id="@+id/tvBlood"
+                                android:textColor="#6A90B5"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:textSize="14dp"
+                                android:textColor="#DF6A90B5"
+                                android:layout_height="wrap_content"
+                                android:text="রক্তের গ্রুপ" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_marginLeft="16dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="16dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:textSize="20dp"
+                                android:textColor="#6A90B5"
+                                android:layout_height="wrap_content"
+                                android:text="শান্তিনগর" />
+
+                            <TextView
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:textSize="14dp"
+                                android:textColor="#EE6A90B5"
+                                android:layout_height="wrap_content"
+                                android:text="এলাকা" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:layout_width="100sp"
+                        android:layout_marginTop="-8dp"
+                        android:layout_height="100sp"
+                        android:src="@drawable/man"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="6dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:src="@drawable/call" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:text="01521110902"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#F06A90B5"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
