@@ -1,8 +1,6 @@
 package com.example.proloy.lifesaver.Fragment;
 
-import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -10,8 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.proloy.lifesaver.ActivityBlood;
-import com.example.proloy.lifesaver.ActivityReceipt;
+import com.example.proloy.lifesaver.Activity.ActivityReceipt;
 import com.example.proloy.lifesaver.R;
 
 

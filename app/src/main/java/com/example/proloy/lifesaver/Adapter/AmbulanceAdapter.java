@@ -1,27 +1,21 @@
 package com.example.proloy.lifesaver.Adapter;
 
 import android.content.Context;
-import android.graphics.Movie;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.proloy.lifesaver.Model.Donor;
+import com.example.proloy.lifesaver.Model.Ambulance;
 import com.example.proloy.lifesaver.R;
 
 import java.util.List;
 
-public class BloodDonorAdapter extends RecyclerView.Adapter <BloodDonorAdapter.ViewHolder>{
+public class AmbulanceAdapter extends RecyclerView.Adapter<AmbulanceAdapter.ViewHolder> {
 
-    private Context context;
-    private List<Donor> donorList;
-
-    public BloodDonorAdapter(Context context, List<Donor> donorList) {
-        this.context = context;
-        this.donorList = donorList;
-    }
+    private Context context ;
+    private List<Ambulance> ambulanceList;
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -30,16 +24,16 @@ public class BloodDonorAdapter extends RecyclerView.Adapter <BloodDonorAdapter.V
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
-        Donor donor = donorList.get(position);
+    public void onBindViewHolder(AmbulanceAdapter.ViewHolder holder, int position) {
+        Ambulance ambulance = ambulanceList.get(position);
 
-        holder.tvName.setText(donor.getName());
-        holder.tvBlood.setText(donor.getBlood());
+        holder.tvName.setText(ambulance.getDriverName());
+        holder.tvBlood.setText(ambulance.getMobile());
     }
 
     @Override
     public int getItemCount() {
-        return donorList.size();
+        return ambulanceList.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

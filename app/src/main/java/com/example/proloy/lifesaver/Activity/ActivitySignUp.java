@@ -1,4 +1,4 @@
-package com.example.proloy.lifesaver;
+package com.example.proloy.lifesaver.Activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.example.proloy.lifesaver.R;
 
 public class ActivitySignUp extends AppCompatActivity {
 

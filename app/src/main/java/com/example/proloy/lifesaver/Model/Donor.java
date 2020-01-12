@@ -11,8 +11,6 @@ public class Donor {
         this.blood = blood;
     }
 
-    public Donor() {
-    }
 
     public String getName() {
         return name;
@@ -39,10 +37,11 @@ public class Donor {
     }
 
     public String getBlood() {
-        return adress;
+        return blood;
     }
 
     public void setBlood(String blood) {
-        this.adress = adress;
+        this.blood = blood;
     }
 }
+

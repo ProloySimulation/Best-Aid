@@ -12,30 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".QuestionActivity">
+        <activity android:name=".Activity.QuestionActivity">
         </activity>
-        <activity android:name=".ActivitySignUp" />
+        <activity android:name=".Activity.ActivitySignUp" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Activity.MainActivity"
             android:label="Best Aid"></activity>
         <activity
-            android:name=".ActivityLogin"
-            android:label="Best Aid">
-        </activity>
-        <activity
-            android:name=".ActivityRegistration"
-            android:label="Best Aid"></activity>
-        <activity
-            android:name=".ActivityApointment"
-            android:label="Best Aid" />
-        <activity
-            android:name=".ActivityDoctorProfile"
-            android:label="Best Aid" />
-        <activity
-            android:name=".ActivityDateFix"
-            android:label="Best Aid" />
-        <activity
-            android:name=".ActivityBlood"
+            android:name=".Activity.ActivityLogin"
             android:label="Best Aid">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,10 +28,26 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ActivityReceipt"
+            android:name=".Activity.ActivityRegistration"
+            android:label="Best Aid"></activity>
+        <activity
+            android:name=".Activity.ActivityApointment"
             android:label="Best Aid" />
         <activity
-            android:name=".ActivityCatagory"
+            android:name=".Activity.ActivityDoctorProfile"
+            android:label="Best Aid" />
+        <activity
+            android:name=".Activity.ActivityDateFix"
+            android:label="Best Aid" />
+        <activity
+            android:name=".Activity.ActivityBlood"
+            android:label="Best Aid">
+        </activity>
+        <activity
+            android:name=".Activity.ActivityReceipt"
+            android:label="Best Aid" />
+        <activity
+            android:name=".Activity.ActivityCatagory"
             android:label="Best Aid" />
     </application>
 

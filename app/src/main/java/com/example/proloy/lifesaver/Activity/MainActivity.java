@@ -1,4 +1,4 @@
-package com.example.proloy.lifesaver;
+package com.example.proloy.lifesaver.Activity;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -15,6 +15,7 @@ import android.widget.RelativeLayout;
 import com.example.proloy.lifesaver.Fragment.HomeFragment;
 import com.example.proloy.lifesaver.Fragment.MessageFragment;
 import com.example.proloy.lifesaver.Fragment.ProfileFragment;
+import com.example.proloy.lifesaver.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -58,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
 
     }
 

@@ -1,10 +1,12 @@
-package com.example.proloy.lifesaver;
+package com.example.proloy.lifesaver.Activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.proloy.lifesaver.R;
 
 public class ActivityReceipt extends AppCompatActivity {
 
