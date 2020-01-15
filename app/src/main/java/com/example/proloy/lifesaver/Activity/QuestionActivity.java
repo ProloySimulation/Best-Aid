@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -38,6 +39,7 @@ public class QuestionActivity extends AppCompatActivity {
     private RecyclerView mList;
     String postN = "post_question";
     TextView tvClick ;
+    String comment ;
 
     private LinearLayoutManager linearLayoutManager;
     private DividerItemDecoration dividerItemDecoration;
@@ -140,22 +142,17 @@ public class QuestionActivity extends AppCompatActivity {
 
     private void seeQuestions() {
 
-       /* Intent intent = getIntent();
-        final String tokeRecieve = intent.getStringExtra(ActivityLogin.tokenPass);
-        final String idRecieve = intent.getStringExtra(ActivityLogin.idPass);*/
 
         SharedPreferences sharedPreferences = getSharedPreferences("myAppPrefs", Context.MODE_PRIVATE);
         final String tokeRecieve = sharedPreferences.getString("token", null);
         final String idRecieve = sharedPreferences.getString("id", null);
 
-        //      final String question = etWriteQuestion.toString().trim();
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, "https://bestaidbd.com/app/API/get_questions.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
 
-                        //     Toast.makeText(QuestionActivity.this, "Question Upload Successfully", Toast.LENGTH_SHORT).show();
                         try {
                             JSONObject jsonObject = new JSONObject(response);
 
@@ -164,10 +161,26 @@ public class QuestionActivity extends AppCompatActivity {
 
                                 JSONObject dataobj = dataArray.getJSONObject(i);
 
+
                                 String questions = dataobj.getString("questions_description");
-                                //    hobby = dataobj.getString("hobby");
-                                Question question = new Question(questions);
+                                String id = dataobj.getString("questions_id");
+                                JSONArray commentArray = dataobj.getJSONArray("comments");
+                                for(int j=0;j<commentArray.length();j++)
+                                {
+                                    JSONObject commentobj = commentArray.getJSONObject(j);
+                                    comment = commentobj.getString("comment_description");
+
+                                    if(TextUtils.isEmpty(comment))
+                                    {
+                                        comment = "Wait";
+                                    }
+                                    //          Toast.makeText(MainActivity.this, comment, Toast.LENGTH_SHORT).show();
+
+
+                                }
+                                Question question = new Question(questions,comment);
                                 questionList.add(question);
+
                             }
 
 
@@ -192,7 +205,6 @@ public class QuestionActivity extends AppCompatActivity {
                 params.put("get_questions", type);
                 params.put("user_id",idRecieve);
                 params.put("token",tokeRecieve);
-                //   params.put("questions_description",question);
 
                 return params;
             }

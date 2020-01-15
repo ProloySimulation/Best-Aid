@@ -39,6 +39,7 @@ public class QuestionAdapter extends RecyclerView.Adapter <QuestionAdapter.ViewH
         Question question = questionList.get(position);
 
         holder.tvQuestion.setText(question.getDescription());
+        holder.tvAns.setText(question.getComment());
     }
 
     @Override
@@ -48,7 +49,7 @@ public class QuestionAdapter extends RecyclerView.Adapter <QuestionAdapter.ViewH
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         public TextView tvQuestion;
-        TextView tvClick ;
+        TextView tvAns  ;
         LinearLayout expendable ;
         CardView cardView;
 
@@ -56,23 +57,9 @@ public class QuestionAdapter extends RecyclerView.Adapter <QuestionAdapter.ViewH
             super(itemView);
 
             tvQuestion = itemView.findViewById(R.id.tvQuestions);
-            tvClick = itemView.findViewById(R.id.click);
-            expendable = itemView.findViewById(R.id.llAnswer);
             cardView = itemView.findViewById(R.id.card);
+            tvAns = itemView.findViewById(R.id.tvAnswer);
 
-            tvClick.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    if (expendable.getVisibility()==View.GONE){
-                        TransitionManager.beginDelayedTransition(cardView, new AutoTransition());
-                        expendable.setVisibility(View.VISIBLE);
-                    }
-                    else {
-                        TransitionManager.beginDelayedTransition(cardView, new AutoTransition());
-                        expendable.setVisibility(View.GONE);
-                    }
-                }
-            });
 
         }
     }

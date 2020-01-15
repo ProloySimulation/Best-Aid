@@ -2,7 +2,15 @@ package com.example.proloy.lifesaver.Model;
 
 public class Question {
 
-    String description ;
+    String description , comment  ;
+
+    public String getComment() {
+        return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
 
     public String getDescription() {
         return description;
@@ -12,7 +20,8 @@ public class Question {
         this.description = description;
     }
 
-    public Question(String description) {
+    public Question(String description , String comment) {
         this.description = description;
+        this.comment = comment ;
     }
 }
