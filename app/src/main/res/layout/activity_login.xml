@@ -49,11 +49,6 @@
             android:background="@drawable/rounded_white"
             android:hint="Password"
             android:id="@+id/etLoginPassword" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tvShow"
-            android:text="Hello"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

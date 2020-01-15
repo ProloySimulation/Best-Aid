@@ -138,6 +138,7 @@
                         android:layout_marginTop="5sp"
                         android:text="01521110902"
                         android:layout_marginLeft="5dp"
+                        android:id="@+id/tvMobile"
                         android:textColor="#F06A90B5"
                         android:layout_height="wrap_content" />
 
